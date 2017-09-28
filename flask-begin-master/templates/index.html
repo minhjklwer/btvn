@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cưa Gái Đại Cương</title>
+  </head>
+  <body>
+
+    {% for girl_type in girl_types %}
+      <h3>{{ girl_type['name'] }}</h3>
+      <img src="{{ girl_type["image"] }}" alt="{{ girl_type["name"] }}">
+      <h4>{{ girl_type["description"] }}</h4>
+    {% endfor %}
+
+  </body>
+</html>
